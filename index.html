@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ホモ判定プログラム</title>
+    <title>ホモチェッカー</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ホモ判定フローチャート</h1>
-        <p>ホモですか？</p>
-        <button id="yesButton">はい</button>
-        <button id="noButton">いいえ</button>
-        <div id="result"></div>
-    </div>
+    <h1>ホモチェッカー</h1>
+    <div id="result">ここに結果が表示されます。</div>
+    <button id="yesButton">はい</button>
+    <button id="noButton">いいえ</button>
+    <br>
+    <label for="audioSelect">再生する音声を選択:</label>
+    <select id="audioSelect">
+        <option value="soudayo.mp3">そうだよ（便乗）</option>
+        <option value="ureshiidaro.mp3">嬉しいダルルォ？</option>
+        <option value="miseteyaruyo.mp3">見たけりゃ見せてやるよ(震え声)</option>
+        <option value="inmyu.mp3">淫ミュ</option>
+        <option value="ikimasuyo.mp3">いきますよ～、いきますよ～イクイク</option>
+        <option value="ikimasyone.mp3">じゃけん夜行きましょうね</option>
+        <option value="oigruua.mp3">おいゴルァ！降りろ！お前免許持ってんのかオラァ！おい</option>
+        <option value="naantukareta.mp3">ぬわああああああああん疲れたもおおおおおおおおおおおん(ﾁｶﾚﾀ…)</option>
+        <option value="koko.mp3">こ↑こ↓</option>
+        <option value="yarimasunee.mp3">やりますねえ</option>
+    </select>
+
+    <label for="volumeControl">音量:</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+
+    <p>ホモの人数: <span id="accessCounter">読み込み中...</span></p>
+    
+
+    <p>借りた音源→<a href="https://mini.kaedeee.com/yjsnpi-best">https://mini.kaedeee.com/yjsnpi-best</a></p>
+    
+        <footer>edit by <a href="https://x.com/Metalepsis_jp">Metalepsis_jp</a></footer>
+
     <script src="script.js"></script>
 </body>
 </html>
