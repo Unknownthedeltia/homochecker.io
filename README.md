@@ -1,3 +1,0 @@
-# homochecker.io
-
-そうだよ
