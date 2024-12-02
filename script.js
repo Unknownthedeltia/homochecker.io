@@ -71,16 +71,15 @@ function initialize() {
 // 初期化関数を呼び出し
 initialize();
 
-document.addEventListener("DOMContentLoaded", () => {
-    // counter.php にアクセスしてカウンターを取得
-    fetch('counter.php')
+// アクセスカウンターの更新
+function updateAccessCounter() {
+    fetch("access_counter.php")
         .then(response => response.json())
         .then(data => {
-            // アクセス数をHTMLに表示
-            document.getElementById('accessCounter').textContent = data.count;
+            counterValue.textContent = data.count;
         })
         .catch(error => {
-            console.error('カウンターの取得に失敗しました:', error);
+            console.error("カウンター更新エラー:", error);
+            counterValue.textContent = "エラー";
         });
-});
-
+}
