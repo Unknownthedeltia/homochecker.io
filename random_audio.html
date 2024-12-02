@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム音声再生フローチャート</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ランダムホモチェッカー</h1>
+    <div id="result">ここに結果が表示されます。</div>
+    <button id="yesButton">はい</button>
+    <button id="noButton">いいえ</button>
+
+    <div id="audioControls">
+        <label for="volumeControl">音量:</label>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div id="accessCounter">
+        <p>現在のホモの数: <span id="counterValue"></span></p>
+    </div>
+    
+    <a href="index.html">ランダムホモチェッカーページに移動</a>
+    <p>借りた音源→<a href="https://mini.kaedeee.com/yjsnpi-best">https://mini.kaedeee.com/yjsnpi-best</a></p>
+    
+        <footer>edit by <a href="https://x.com/Metalepsis_jp">Metalepsis_jp</a></footer>
+
+    <script src="random_audio.js"></script>
+</body>
+</html>
